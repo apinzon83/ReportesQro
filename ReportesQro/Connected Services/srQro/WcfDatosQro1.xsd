@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfc_Empleado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Empleado" nillable="true" type="tns:c_Empleado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Empleado" nillable="true" type="tns:ArrayOfc_Empleado" />
+  <xs:complexType name="c_Empleado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aMaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="aPaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clave" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="perfil" type="xs:int" />
+      <xs:element minOccurs="0" name="status" type="ser:char" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Empleado" nillable="true" type="tns:c_Empleado" />
+  <xs:complexType name="ArrayOfc_Cat_Delegacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Cat_Delegacion" nillable="true" type="tns:c_Cat_Delegacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Cat_Delegacion" nillable="true" type="tns:ArrayOfc_Cat_Delegacion" />
+  <xs:complexType name="c_Cat_Delegacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clave" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prefijo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="ser:char" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Cat_Delegacion" nillable="true" type="tns:c_Cat_Delegacion" />
+  <xs:complexType name="ArrayOfc_cat_Municipio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_cat_Municipio" nillable="true" type="tns:c_cat_Municipio" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_cat_Municipio" nillable="true" type="tns:ArrayOfc_cat_Municipio" />
+  <xs:complexType name="c_cat_Municipio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clave" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_dele" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_cat_Municipio" nillable="true" type="tns:c_cat_Municipio" />
+  <xs:complexType name="ArrayOfc_cat_tipoFolio">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_cat_tipoFolio" nillable="true" type="tns:c_cat_tipoFolio" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_cat_tipoFolio" nillable="true" type="tns:ArrayOfc_cat_tipoFolio" />
+  <xs:complexType name="c_cat_tipoFolio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clave" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_cat_tipoFolio" nillable="true" type="tns:c_cat_tipoFolio" />
+  <xs:complexType name="ArrayOfc_cat_Tramite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_cat_Tramite" nillable="true" type="tns:c_cat_Tramite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_cat_Tramite" nillable="true" type="tns:ArrayOfc_cat_Tramite" />
+  <xs:complexType name="c_cat_Tramite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clave" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_cat_Tramite" nillable="true" type="tns:c_cat_Tramite" />
+  <xs:complexType name="ArrayOfc_Caratulas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Caratulas" nillable="true" type="tns:c_Caratulas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Caratulas" nillable="true" type="tns:ArrayOfc_Caratulas" />
+  <xs:complexType name="c_Caratulas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="caja" type="xs:int" />
+      <xs:element minOccurs="0" name="cod_barras" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_Manzana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_catastral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_delegacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_empCaptura" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_micRegion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_municipio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_region" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_sector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_captura" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_tramite" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="folder_" type="xs:int" />
+      <xs:element minOccurs="0" name="folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="folio_anio" type="xs:int" />
+      <xs:element minOccurs="0" name="folio_cons" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="folio_cve" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="predio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tramite" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Caratulas" nillable="true" type="tns:c_Caratulas" />
+  <xs:complexType name="ArrayOfc_Datos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Datos" nillable="true" type="tns:c_Datos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Datos" nillable="true" type="tns:ArrayOfc_Datos" />
+  <xs:complexType name="c_Datos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cve" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_empIndex" type="xs:int" />
+      <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="f_escaneo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="f_indexado" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id_caratula" type="xs:int" />
+      <xs:element minOccurs="0" name="nom_archivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_digitales" type="xs:int" />
+      <xs:element minOccurs="0" name="num_hojas" type="xs:int" />
+      <xs:element minOccurs="0" name="num_planos" type="xs:int" />
+      <xs:element minOccurs="0" name="ruta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tamano_kb" type="xs:double" />
+      <xs:element minOccurs="0" name="tipo_mime" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Datos" nillable="true" type="tns:c_Datos" />
+  <xs:complexType name="ArrayOfc_IndexadosBuscadosView">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_IndexadosBuscadosView" nillable="true" type="tns:c_IndexadosBuscadosView" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_IndexadosBuscadosView" nillable="true" type="tns:ArrayOfc_IndexadosBuscadosView" />
+  <xs:complexType name="c_IndexadosBuscadosView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="caja" type="xs:int" />
+      <xs:element minOccurs="0" name="clave" type="xs:int" />
+      <xs:element minOccurs="0" name="clave_empleado" type="xs:int" />
+      <xs:element minOccurs="0" name="codigo_barras" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_catastral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_delegacion" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_municipio" type="xs:int" />
+      <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_escaneo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_indexado" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="folder_" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_archivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_digitales" type="xs:int" />
+      <xs:element minOccurs="0" name="num_hojas" type="xs:int" />
+      <xs:element minOccurs="0" name="num_planos" type="xs:int" />
+      <xs:element minOccurs="0" name="ruta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tamano_kb" type="xs:double" />
+      <xs:element minOccurs="0" name="tipo_mime" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_IndexadosBuscadosView" nillable="true" type="tns:c_IndexadosBuscadosView" />
+  <xs:complexType name="ArrayOfc_CajasCerradas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_CajasCerradas" nillable="true" type="tns:c_CajasCerradas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_CajasCerradas" nillable="true" type="tns:ArrayOfc_CajasCerradas" />
+  <xs:complexType name="c_CajasCerradas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Scanner" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" type="ser:char" />
+      <xs:element minOccurs="0" name="cve" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_dele" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_empcierra" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_empdigi" type="xs:int" />
+      <xs:element minOccurs="0" name="f_cierre" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="f_digi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="f_entrega" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="num_archivos" type="xs:int" />
+      <xs:element minOccurs="0" name="num_caja" type="xs:int" />
+      <xs:element minOccurs="0" name="num_cves_cata" type="xs:int" />
+      <xs:element minOccurs="0" name="num_folders" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_CajasCerradas" nillable="true" type="tns:c_CajasCerradas" />
+  <xs:complexType name="c_Estadisticas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cajas_capturadas" type="xs:int" />
+      <xs:element minOccurs="0" name="cajas_completas" type="xs:int" />
+      <xs:element minOccurs="0" name="cajas_estimadas_para_entrega" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_dele" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_entrega" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="hojas_actuales" type="xs:int" />
+      <xs:element minOccurs="0" name="hojas_para_entrega" type="xs:int" />
+      <xs:element minOccurs="0" name="promedio_hojas_por_caja" type="xs:int" />
+      <xs:element minOccurs="0" name="promedio_tramites_por_caja" type="xs:int" />
+      <xs:element minOccurs="0" name="status_entrega" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_hojas_completas" type="xs:int" />
+      <xs:element minOccurs="0" name="total_hojas_hasta_entrega" type="xs:int" />
+      <xs:element minOccurs="0" name="tramites_capturados" type="xs:int" />
+      <xs:element minOccurs="0" name="tramites_escaneados" type="xs:int" />
+      <xs:element minOccurs="0" name="tramites_estimados_para_entrega" type="xs:int" />
+      <xs:element minOccurs="0" name="tramites_indexados" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Estadisticas" nillable="true" type="tns:c_Estadisticas" />
+  <xs:complexType name="ArrayOfc_Rep_Caratula">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Rep_Caratula" nillable="true" type="tns:c_Rep_Caratula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Rep_Caratula" nillable="true" type="tns:ArrayOfc_Rep_Caratula" />
+  <xs:complexType name="c_Rep_Caratula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Caja" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve_Catastral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cve_Delegacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve_Municipio" type="xs:int" />
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha_Captura" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Folder" type="xs:int" />
+      <xs:element minOccurs="0" name="Folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo_MIME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Rep_Caratula" nillable="true" type="tns:c_Rep_Caratula" />
+  <xs:complexType name="ArrayOfc_Rep_Escaneo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Rep_Escaneo" nillable="true" type="tns:c_Rep_Escaneo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Rep_Escaneo" nillable="true" type="tns:ArrayOfc_Rep_Escaneo" />
+  <xs:complexType name="c_Rep_Escaneo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Caja" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve_Catastral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cve_Delegacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve_Municipio" type="xs:int" />
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha_Escaneo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Folder" type="xs:int" />
+      <xs:element minOccurs="0" name="Folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo_MIME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Rep_Escaneo" nillable="true" type="tns:c_Rep_Escaneo" />
+  <xs:complexType name="ArrayOfc_Rep_Index">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Rep_Index" nillable="true" type="tns:c_Rep_Index" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Rep_Index" nillable="true" type="tns:ArrayOfc_Rep_Index" />
+  <xs:complexType name="c_Rep_Index">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Caja" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve_Catastral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cve_Delegacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Cve_Municipio" type="xs:int" />
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Folder" type="xs:int" />
+      <xs:element minOccurs="0" name="Folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Num_Digitales" type="xs:int" />
+      <xs:element minOccurs="0" name="Num_Hojas" type="xs:int" />
+      <xs:element minOccurs="0" name="Num_Planos" type="xs:int" />
+      <xs:element minOccurs="0" name="Tamano_kb" type="xs:double" />
+      <xs:element minOccurs="0" name="Tipo_MIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="f_indexado" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Rep_Index" nillable="true" type="tns:c_Rep_Index" />
+  <xs:complexType name="ArrayOfc_Rep_Entrega">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c_Rep_Entrega" nillable="true" type="tns:c_Rep_Entrega" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfc_Rep_Entrega" nillable="true" type="tns:ArrayOfc_Rep_Entrega" />
+  <xs:complexType name="c_Rep_Entrega">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="caja" type="xs:int" />
+      <xs:element minOccurs="0" name="cve" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_catastral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cve_delegacion" type="xs:int" />
+      <xs:element minOccurs="0" name="cve_municipio" type="xs:int" />
+      <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="f_escaneo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="folder" type="xs:int" />
+      <xs:element minOccurs="0" name="folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="num_digitales" type="xs:int" />
+      <xs:element minOccurs="0" name="num_hojas" type="xs:int" />
+      <xs:element minOccurs="0" name="num_planos" type="xs:int" />
+      <xs:element minOccurs="0" name="tamano_kb" type="xs:double" />
+      <xs:element minOccurs="0" name="tipo_MIME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Rep_Entrega" nillable="true" type="tns:c_Rep_Entrega" />
+</xs:schema>

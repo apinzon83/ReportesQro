@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" />
+      <xsd:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfDatosQro" />
+      <xsd:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_obtenerListaEmpleados_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaEmpleados" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaEmpleados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaEmpleadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaDelegaciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaDelegaciones" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaDelegaciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaDelegacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaMunicipios_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaMunicipios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaMunicipios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaMunicipiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaTiposFolios_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaTiposFolios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaTiposFolios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaTiposFoliosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaTramites_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaTramites" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaTramites_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaTramitesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaCaratulas_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaCaratulas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaCaratulas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaCaratulasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaDatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaDatos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaDatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaIndexadosBuscadosView_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaIndexadosBuscadosView" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaIndexadosBuscadosView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaIndexadosBuscadosViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaCajasCerradas_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaCajasCerradas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaCajasCerradas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaCajasCerradasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerEstadisticas_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerEstadisticas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerEstadisticas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerEstadisticasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaEntregas_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaEntregas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaEntregas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaEntregasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepCaratula_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepCaratula" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepCaratula_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepCaratulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepEscaneo_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepEscaneo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepEscaneo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepEscaneoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepIndexado_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepIndexado" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepIndexado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepIndexadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaStrings_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaStrings" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerListaStrings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerListaStringsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepEntrega_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepEntrega" />
+  </wsdl:message>
+  <wsdl:message name="IService1_obtenerRepEntrega_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerRepEntregaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_contar_InputMessage">
+    <wsdl:part name="parameters" element="tns:contar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_contar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_buscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_buscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_InputMessage">
+    <wsdl:part name="parameters" element="tns:listar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editar_InputMessage">
+    <wsdl:part name="parameters" element="tns:editar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="obtenerListaEmpleados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaEmpleados" message="tns:IService1_obtenerListaEmpleados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaEmpleadosResponse" message="tns:IService1_obtenerListaEmpleados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaDelegaciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaDelegaciones" message="tns:IService1_obtenerListaDelegaciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaDelegacionesResponse" message="tns:IService1_obtenerListaDelegaciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaMunicipios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaMunicipios" message="tns:IService1_obtenerListaMunicipios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaMunicipiosResponse" message="tns:IService1_obtenerListaMunicipios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaTiposFolios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaTiposFolios" message="tns:IService1_obtenerListaTiposFolios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaTiposFoliosResponse" message="tns:IService1_obtenerListaTiposFolios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaTramites">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaTramites" message="tns:IService1_obtenerListaTramites_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaTramitesResponse" message="tns:IService1_obtenerListaTramites_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaCaratulas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaCaratulas" message="tns:IService1_obtenerListaCaratulas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaCaratulasResponse" message="tns:IService1_obtenerListaCaratulas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaDatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaDatos" message="tns:IService1_obtenerListaDatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaDatosResponse" message="tns:IService1_obtenerListaDatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaIndexadosBuscadosView">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaIndexadosBuscadosView" message="tns:IService1_obtenerListaIndexadosBuscadosView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaIndexadosBuscadosViewResponse" message="tns:IService1_obtenerListaIndexadosBuscadosView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaCajasCerradas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaCajasCerradas" message="tns:IService1_obtenerListaCajasCerradas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaCajasCerradasResponse" message="tns:IService1_obtenerListaCajasCerradas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEstadisticas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerEstadisticas" message="tns:IService1_obtenerEstadisticas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerEstadisticasResponse" message="tns:IService1_obtenerEstadisticas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaEntregas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaEntregas" message="tns:IService1_obtenerListaEntregas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaEntregasResponse" message="tns:IService1_obtenerListaEntregas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepCaratula">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerRepCaratula" message="tns:IService1_obtenerRepCaratula_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerRepCaratulaResponse" message="tns:IService1_obtenerRepCaratula_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepEscaneo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerRepEscaneo" message="tns:IService1_obtenerRepEscaneo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerRepEscaneoResponse" message="tns:IService1_obtenerRepEscaneo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepIndexado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerRepIndexado" message="tns:IService1_obtenerRepIndexado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerRepIndexadoResponse" message="tns:IService1_obtenerRepIndexado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaStrings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerListaStrings" message="tns:IService1_obtenerListaStrings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerListaStringsResponse" message="tns:IService1_obtenerListaStrings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepEntrega">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/obtenerRepEntrega" message="tns:IService1_obtenerRepEntrega_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/obtenerRepEntregaResponse" message="tns:IService1_obtenerRepEntrega_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/contar" message="tns:IService1_contar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/contarResponse" message="tns:IService1_contar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/buscar" message="tns:IService1_buscar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/buscarResponse" message="tns:IService1_buscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listar" message="tns:IService1_listar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listarResponse" message="tns:IService1_listar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editar" message="tns:IService1_editar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editarResponse" message="tns:IService1_editar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="obtenerListaEmpleados">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaEmpleados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaDelegaciones">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaDelegaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaMunicipios">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaMunicipios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaTiposFolios">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaTiposFolios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaTramites">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaTramites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaCaratulas">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaCaratulas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaDatos">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaDatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaIndexadosBuscadosView">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaIndexadosBuscadosView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaCajasCerradas">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaCajasCerradas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEstadisticas">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerEstadisticas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaEntregas">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaEntregas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepCaratula">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerRepCaratula" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepEscaneo">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerRepEscaneo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepIndexado">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerRepIndexado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerListaStrings">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerListaStrings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerRepEntrega">
+      <soap:operation soapAction="http://tempuri.org/IService1/obtenerRepEntrega" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contar">
+      <soap:operation soapAction="http://tempuri.org/IService1/contar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscar">
+      <soap:operation soapAction="http://tempuri.org/IService1/buscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar">
+      <soap:operation soapAction="http://tempuri.org/IService1/listar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editar">
+      <soap:operation soapAction="http://tempuri.org/IService1/editar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

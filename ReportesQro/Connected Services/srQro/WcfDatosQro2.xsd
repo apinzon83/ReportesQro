@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" />
+  <xs:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfDatosQro" />
+  <xs:import schemaLocation="http://servidorqro1/appqro/wcf/WcfDatosQro.Service1.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="obtenerListaEmpleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaEmpleadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaEmpleadosResult" nillable="true" type="q1:ArrayOfc_Empleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaDelegaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaDelegacionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaDelegacionesResult" nillable="true" type="q2:ArrayOfc_Cat_Delegacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaMunicipios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaMunicipiosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaMunicipiosResult" nillable="true" type="q3:ArrayOfc_cat_Municipio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaTiposFolios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaTiposFoliosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaTiposFoliosResult" nillable="true" type="q4:ArrayOfc_cat_tipoFolio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaTramites">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaTramitesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaTramitesResult" nillable="true" type="q5:ArrayOfc_cat_Tramite" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaCaratulas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaCaratulasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaCaratulasResult" nillable="true" type="q6:ArrayOfc_Caratulas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaDatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaDatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaDatosResult" nillable="true" type="q7:ArrayOfc_Datos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaIndexadosBuscadosView">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaIndexadosBuscadosViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaIndexadosBuscadosViewResult" nillable="true" type="q8:ArrayOfc_IndexadosBuscadosView" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaCajasCerradas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaCajasCerradasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerListaCajasCerradasResult" nillable="true" type="q9:ArrayOfc_CajasCerradas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerEstadisticas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cve_dele" type="xs:int" />
+        <xs:element minOccurs="0" name="num_entrega" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerEstadisticasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerEstadisticasResult" nillable="true" type="q10:c_Estadisticas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaEntregas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaEntregasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WcfDatosQro" minOccurs="0" name="obtenerListaEntregasResult" nillable="true" type="q11:ArrayOfc_Entrega" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepCaratula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepCaratulaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerRepCaratulaResult" nillable="true" type="q12:ArrayOfc_Rep_Caratula" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepEscaneo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepEscaneoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerRepEscaneoResult" nillable="true" type="q13:ArrayOfc_Rep_Escaneo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepIndexado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepIndexadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerRepIndexadoResult" nillable="true" type="q14:ArrayOfc_Rep_Index" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaStrings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerListaStringsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="obtenerListaStringsResult" nillable="true" type="q15:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepEntrega">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="obtenerRepEntregaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WcfDatosQro.Clases" minOccurs="0" name="obtenerRepEntregaResult" nillable="true" type="q16:ArrayOfc_Rep_Entrega" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="buscar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="buscarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="buscarResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consulta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listarResult" nillable="true" type="q17:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cadenaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="update" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
